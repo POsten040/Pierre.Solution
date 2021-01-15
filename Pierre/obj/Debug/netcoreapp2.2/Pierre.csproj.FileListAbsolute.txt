@@ -26,3 +26,7 @@ C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Raz
 C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Razor\Views\Treats\Delete.g.cshtml.cs
 C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Razor\Views\Treats\Edit.g.cshtml.cs
 C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Razor\Views\Treats\Index.g.cshtml.cs
+C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Razor\Views\Flavors\Create.g.cshtml.cs
+C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Razor\Views\Flavors\Delete.g.cshtml.cs
+C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Razor\Views\Flavors\Edit.g.cshtml.cs
+C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Razor\Views\Flavors\Index.g.cshtml.cs

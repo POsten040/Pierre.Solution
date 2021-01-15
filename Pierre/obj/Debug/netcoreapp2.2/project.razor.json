@@ -1892,6 +1892,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\lamapost0001\\desktop\\pierre.solution\\Pierre\\Views\\Account\\Register.cshtml",
+      "TargetPath": "Views\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\lamapost0001\\desktop\\pierre.solution\\Pierre\\Views\\Treats\\Delete.cshtml",
       "TargetPath": "Views\\Treats\\Delete.cshtml",
       "FileKind": "mvc"
@@ -1919,6 +1924,11 @@
     {
       "FilePath": "c:\\Users\\lamapost0001\\desktop\\pierre.solution\\Pierre\\Views\\Treats\\Edit.cshtml",
       "TargetPath": "Views\\Treats\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lamapost0001\\desktop\\pierre.solution\\Pierre\\Views\\Account\\Index.cshtml",
+      "TargetPath": "Views\\Account\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],
