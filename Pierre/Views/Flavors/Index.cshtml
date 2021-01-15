@@ -1,0 +1,23 @@
+@{
+  Layout = "_Layout";
+}
+
+@using Pierre.Models
+@model Pierre.Models.Treat;
+
+<h1>Welcome to Flavor Town!</h1>
+<div class="container">
+  @if (ViewBag.Flavors != null)
+  {
+    @foreach(Flavor flavor in ViewBag.Flavors)
+    {
+      @Html.ActionLink("Change Flavor", "Edit", new {id=flavor.FlavorId})
+      @Html.ActionLink("Erase Flavor", "Delete", new {id=flavor.FlavorId})
+    }
+  }
+  else 
+  {
+    <h2>Favor Town Population <em>NONE!</em></h2>
+  }
+  @Html.ActionLink("Spawn Flavor", "Create")
+</div>

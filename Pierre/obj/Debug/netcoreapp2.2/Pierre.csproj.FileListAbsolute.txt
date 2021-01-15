@@ -22,3 +22,7 @@ C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Raz
 C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Pierre.RazorTargetAssemblyInfo.cs
 C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Pierre.Views.pdb
 C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Pierre.csproj.CopyComplete
+C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Razor\Views\Treats\Create.g.cshtml.cs
+C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Razor\Views\Treats\Delete.g.cshtml.cs
+C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Razor\Views\Treats\Edit.g.cshtml.cs
+C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Razor\Views\Treats\Index.g.cshtml.cs

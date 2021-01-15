@@ -1,0 +1,16 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Pierre.Models.Treat;
+
+<h4>Edit this Treat:  @Html.DisplayFor(model => model.Type):</h4>
+
+@using (Html.BeginForm())
+{
+  @Html.HiddenFor(model => model.TreatId)
+
+  @Html.LabelFor(model => model.Type)
+  @Html.EditorFor(model => model.Type)
+  <input type="submit" value="Save" />
+}

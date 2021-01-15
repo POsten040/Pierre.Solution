@@ -1,0 +1,16 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Pierre.Models.Flavor;
+
+<h4>Flex your Flavor Muscle!</h4>
+
+@using (Html.BeginForm())
+{
+  @Html.LabelFor(model => model.Name)
+  @Html.TextBoxFor(model => model.Name)
+  @Html.Label("Choose a Treat")
+  @Html.DropDownList("TreatId")
+  <input class="btn" type="submit" value="Add">
+}
