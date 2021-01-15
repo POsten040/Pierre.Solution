@@ -12,11 +12,15 @@
       @if(User.Identity.Name != null)
       {
         <h4>You are signed in as @User.Identity.Name</h4>
+        @using (Html.BeginForm("LogOff", "Account"))
+        {
+          <input type="submit" id="logout" value="Log out"/>
+        }
       } else {
         <h4>You are not currently signed in</h4>
+        @Html.ActionLink("Create an account", "Index", "Account", null, new {@class="links"})
       }
       <hr />
-      @Html.ActionLink("Create an account", "Index", "Account", null, new {@class="links"})
       @Html.ActionLink("Log in", "Login", "Account", null, new {@class="links"})
       @Html.ActionLink("Treats", "Index", "Treats",null,  new { @class = "links"})
       @Html.ActionLink("Flavors", "Index", "Flavors",null,  new { @class = "links"})
