@@ -8,10 +8,12 @@
   </head>
   <body>
     <div class="container pt-5">
+      @Html.ActionLink("Create an account", "Index", "Account", null, new {@class="links"})
       @Html.ActionLink("HOME", "Index", "Home",null,  new { @class = "links"})
       @Html.ActionLink("Treats", "Index", "Treats",null,  new { @class = "links"})
       @Html.ActionLink("Flavors", "Index", "Flavors",null,  new { @class = "links"})
-      @RenderBody()
     </div>
+    <br>
+    @RenderBody()
   </body>
 </html>

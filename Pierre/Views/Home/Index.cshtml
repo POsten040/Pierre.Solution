@@ -4,14 +4,16 @@
 
 @using Pierre.Models
 
-
-<h1>Welcome To Pierre's</h1>
-<span>@Html.ActionLink("Create an account", "Index", "Account")</span>
+<div class="welcome">
+  <h1>Welcome To Pierre's</h1>
+  <img src="https://media.giphy.com/media/5hvFRdojKLRvHUqUEK/giphy.gif">
+</div>
 <br>
-<h3>See a list of treats below</h3>
+<br>
 <div class="container">
   <div class="row">
     <div class="col-md-6">
+    <h3>See a list of Treats below</h3>
       <ul>
         @foreach (Treat treat in ViewBag.Treats)
         {
@@ -21,10 +23,13 @@
       @Html.ActionLink("Go To Treat Corner", "Index", "Treats", null, new{@class="btn"})
     </div>
     <div class="col-md-6">
-      @foreach (Flavor flavor in ViewBag.Flavors)
-      {
-        <li>@flavor</li>
-      }
+      <h3>See a list of Flavors below</h3>
+      <ul>
+        @foreach (Flavor flavor in ViewBag.Flavors)
+        {
+          <li>@Html.DisplayFor(model => flavor.Name)</li>
+        }
+      </ul>
       @Html.ActionLink("Go To Flavor Town", "Index", "Flavors", null, new{@class="btn"})
     </div>
   </div>

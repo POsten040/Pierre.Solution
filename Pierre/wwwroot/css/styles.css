@@ -1,4 +1,25 @@
+body{
+  background-color: brown;
+  color: white;
+}
+
 .btn {
   width: 100%;
   background-color: rgb(162, 212, 162);
+}
+
+.welcome {
+  margin: auto;
+  width: 50%;
+  border: 1px dotted cyan;
+  padding: 15px;
+}
+
+.links {
+  width: 50%;
+  margin: 5px;
+  padding:5px;
+  background-color: white;
+  color: rgb(26, 22, 22);
+  border-radius: 5%;
 }

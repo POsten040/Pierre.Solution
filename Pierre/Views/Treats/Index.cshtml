@@ -5,20 +5,23 @@
 @using Pierre.Models
 @model Pierre.Models.Treat;
 
-<h1>Welcome to the Treat Corner!</h1>
+<h1 class="welcome">Welcome to the Treat Corner!</h1>
 <div class="container">
   @if (ViewBag.Treats != null)
   {
     @foreach(Treat treat in ViewBag.Treats)
     {
-      @Html.ActionLink("Change Treat", "Edit", new {id=treat.TreatId})
-      @Html.ActionLink("Burn Treat", "Delete", new {id=treat.TreatId})
+      <h3>@($"{treat.Type}")</h3>
+      <hr />
+      @Html.ActionLink("Edit Treat", "Edit", new {id=treat.TreatId}, new {@class="links"})
+      @Html.ActionLink("Details", "Details", new {id=treat.TreatId}, new {@class="links"})
+      @Html.ActionLink("Delete Treat", "Delete", new {id=treat.TreatId}, new {@class="links"})
     }
   }
   else 
   {
     <h2>No Treats Here Yet</h2>
   }
-  @Html.ActionLink("Spawn Treat", "Create")
+  @Html.ActionLink("Create Treat", "Create", null, null, new {@class="links"})
 </div>
 

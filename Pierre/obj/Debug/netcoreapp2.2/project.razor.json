@@ -1917,6 +1917,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\lamapost0001\\desktop\\pierre.solution\\Pierre\\Views\\Flavors\\Details.cshtml",
+      "TargetPath": "Views\\Flavors\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\lamapost0001\\desktop\\pierre.solution\\Pierre\\Views\\Treats\\Create.cshtml",
       "TargetPath": "Views\\Treats\\Create.cshtml",
       "FileKind": "mvc"

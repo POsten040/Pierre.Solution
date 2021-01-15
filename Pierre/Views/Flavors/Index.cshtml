@@ -3,21 +3,24 @@
 }
 
 @using Pierre.Models
-@model Pierre.Models.Treat;
+@model Pierre.Models.Flavor;
 
-<h1>Welcome to Flavor Town!</h1>
+<h1 class="welcome">Welcome to Flavor Town!</h1>
 <div class="container">
   @if (ViewBag.Flavors != null)
   {
     @foreach(Flavor flavor in ViewBag.Flavors)
     {
-      @Html.ActionLink("Change Flavor", "Edit", new {id=flavor.FlavorId})
-      @Html.ActionLink("Erase Flavor", "Delete", new {id=flavor.FlavorId})
+      <h3>@($"{flavor.Name}")</h3>
+      <hr />
+      @Html.ActionLink("Edit Flavor", "Edit", null, new {id=flavor.FlavorId}, new {@class="links"})
+      @Html.ActionLink("Details", "Details", null, new {id=flavor.FlavorId}, new {@class="links"})
+      @Html.ActionLink("Erase Flavor", "Delete",null, new {id=flavor.FlavorId}, new {@class="links"})
     }
   }
   else 
   {
-    <h2>Favor Town Population <em>NONE!</em></h2>
+    <h2 class="welcome">Favor Town Population <em>NONE!</em></h2>
   }
-  @Html.ActionLink("Spawn Flavor", "Create")
+  @Html.ActionLink("Create Flavor", "Create", null, null, new {@class="links"})
 </div>
