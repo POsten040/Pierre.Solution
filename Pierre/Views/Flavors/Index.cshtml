@@ -3,13 +3,13 @@
 }
 
 @using Pierre.Models
-@model Pierre.Models.Flavor;
+@model List<Pierre.Models.Flavor>;
 
-<h1 class="welcome">Welcome to Flavor Town!</h1>
+<h1 class="welcome">Welcome to Flavor Town @User.Identity.Name!</h1>
 <div class="container">
-  @if (ViewBag.Flavors != null)
+  @if (Model.Any())
   {
-    @foreach(Flavor flavor in ViewBag.Flavors)
+    @foreach(Flavor flavor in Model)
     {
       <h3>@($"{flavor.Name}")</h3>
       <hr />

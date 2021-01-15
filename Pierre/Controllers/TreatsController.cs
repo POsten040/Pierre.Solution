@@ -27,14 +27,17 @@ namespace Pierre.Controllers
       List<Treat> userTreats = _db.Treats.ToList();
       return View(userTreats);
     }
+    [Authorize]
     public ActionResult Create()
     {
       ViewBag.FlavorId = new SelectList(_db.Flavors, "FlavorId", "Name");
       return View();
     }
     [HttpPost]
-    public ActionResult Create (Treat treat, int flavorId)
+    public async Task<ActionResult> Create (Treat treat, int flavorId)
     {
+      var userId = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+      var currentUser = await _userManager.FindByIdAsync(userId);
       _db.Treats.Add(treat);
       if (flavorId != 0)
       {
@@ -43,9 +46,16 @@ namespace Pierre.Controllers
       _db.SaveChanges();
       return RedirectToAction("Index", "Home");
     }
-    public ActionResult Edit(int id)
+    [Authorize]
+    public async Task<ActionResult> Edit(int id)
     {
+      var userId = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+      var currentUser = await _userManager.FindByIdAsync(userId);
       var thisTreat = _db.Treats.FirstOrDefault(treat => treat.TreatId == id);
+      if (thisTreat == null)
+      {
+        return RedirectToAction("Details", new {id = id});
+      }
       ViewBag.Flavors = _db.Flavors.ToList();
       ViewBag.FlavorId = new SelectList(_db.Flavors, "FlavorId", "Name");
       return View(thisTreat);
@@ -62,9 +72,15 @@ namespace Pierre.Controllers
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
-    public ActionResult Delete(int id)
+    public async  Task<ActionResult> Delete(int id)
     {
+      var userId = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+      var currentUser = await _userManager.FindByIdAsync(userId);
       var thisTreat = _db.Treats.FirstOrDefault(treat => treat.TreatId == id);
+      if (thisTreat == null)
+      {
+        return RedirectToAction("Details", new {id = id});
+      }
       return View(thisTreat);
     }
 
@@ -75,6 +91,13 @@ namespace Pierre.Controllers
       _db.Treats.Remove(thisTreat);
       _db.SaveChanges();
       return RedirectToAction("Index", "Home");
+    }
+    public ActionResult Details(int id)
+    {
+      Treat model = _db.Treats.FirstOrDefault(treat => treat.TreatId == id);
+      var userId = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+      ViewBag.IsCurrentUser = userId != null ? userId == model.User.Id : false;
+      return View(model);
     }
   }
 }

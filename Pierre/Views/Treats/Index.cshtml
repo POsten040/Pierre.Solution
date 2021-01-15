@@ -3,13 +3,13 @@
 }
 
 @using Pierre.Models
-@model Pierre.Models.Treat;
+@model List<Pierre.Models.Treat>;
 
 <h1 class="welcome">Welcome to the Treat Corner!</h1>
 <div class="container">
-  @if (ViewBag.Treats != null)
+  @if (Model.Any())
   {
-    @foreach(Treat treat in ViewBag.Treats)
+    @foreach(Treat treat in Model)
     {
       <h3>@($"{treat.Type}")</h3>
       <hr />
