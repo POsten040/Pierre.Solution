@@ -1,0 +1,14 @@
+C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Pierre.csprojAssemblyReference.cache
+C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Pierre.csproj.CoreCompileInputs.cache
+C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Pierre.RazorAssemblyInfo.cache
+C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Pierre.RazorAssemblyInfo.cs
+C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Pierre.AssemblyInfoInputs.cache
+C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Pierre.AssemblyInfo.cs
+C:\Users\lamapost0001\desktop\pierre.solution\pierre\bin\Debug\netcoreapp2.2\Pierre.deps.json
+C:\Users\lamapost0001\desktop\pierre.solution\pierre\bin\Debug\netcoreapp2.2\Pierre.runtimeconfig.json
+C:\Users\lamapost0001\desktop\pierre.solution\pierre\bin\Debug\netcoreapp2.2\Pierre.runtimeconfig.dev.json
+C:\Users\lamapost0001\desktop\pierre.solution\pierre\bin\Debug\netcoreapp2.2\Pierre.dll
+C:\Users\lamapost0001\desktop\pierre.solution\pierre\bin\Debug\netcoreapp2.2\Pierre.pdb
+C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Pierre.RazorTargetAssemblyInfo.cache
+C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Pierre.dll
+C:\Users\lamapost0001\desktop\pierre.solution\pierre\obj\Debug\netcoreapp2.2\Pierre.pdb
