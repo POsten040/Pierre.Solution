@@ -1,8 +1,10 @@
-# _Library_
+# _Pierre's Bakery_
 
-#### _DATE 01.11.2021_
+#### _DATE 01.15.2021_
 
-#### By _**Patrick Osten & Bess Campbell**_
+#### By _**Patrick Osten**_
+
+![](ReadMeAssets/recording.gif)
 
 ## Description
 - This application was made as part of the Epicodus Coding bootcamp coursework.
@@ -19,7 +21,7 @@ Software Requirements
 * MySQL Workbench
 
 Open by Downloading or Cloning
-* Navigate to <>
+* Navigate to <Pierre.Solution/Pierre>
 * Download this repository to your computer by clicking the green Code button and 'Download Zip'
 * Or clone the repository with `git clone `
 
@@ -49,10 +51,7 @@ AppSettings
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
 | The application should have user authentication. A user should be able to log in and log out. Only logged in users should have create, update and delete functionality. All users should be able to have read functionality.                                                                                                                                            |   |
 | There should be a many-to-many relationship between Treats and Flavors. A treat can have many flavors (such as sweet, savory, spicy, or creamy) and a flavor can have many treats. For instance, the "sweet" flavor could include chocolate croissants, cheesecake, and so on. |   |
-| A user should be able to navigate to a splash page that lists all treats and flavors. Users should be able to click on an individual treat or flavor to see all the treats/flavors that belong to it.)                                                                                                             |   |
-|                                                                                           |   |
-|                     |   |
-| )                                                              |   | |   |  
+| A user should be able to navigate to a splash page that lists all treats and flavors. Users should be able to click on an individual treat or flavor to see all the treats/flavors that belong to it.)                                                                                                            
 </details>
 <br>
 ## Known Bugs
@@ -65,7 +64,6 @@ Patrick Osten at <posten.coding@gmail.com>
 
 ## Technologies Used
 
-* [Bootstrap Components](https://getbootstrap.com/docs/3.3/components/)
 * C#
 * Razor
 * Entity Framework Core

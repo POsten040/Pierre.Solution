@@ -1,0 +1,19 @@
+@{
+  Layout="_Layout";
+}
+
+@model Pierre.Models.Treat
+
+<h1 class="welcome">@Html.DisplayFor(Model => Model.Type)</h1>
+<div class="container">
+  <h4>This Treat has These Flavors:</h4>
+  @if (Model.JoinEntries != null)
+  {
+    <ul>
+      @foreach(var join in Model.JoinEntries)
+      {
+        <li>@Html.ActionLink($"{join.Flavor.Name}", "Details", "Flavors", new {id = join.Flavor.FlavorId})</li>
+      }
+    </ul>
+  }
+</div>

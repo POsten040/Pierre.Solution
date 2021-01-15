@@ -4,9 +4,8 @@
 
 @model Pierre.Models.Flavor
 
-<h1 class="welcome">Flavor</h1>
+<h1 class="welcome">@Html.DisplayFor(Model => Model.Name)</h1>
 <div class="container">
-  <h2>@Model.Name</h2>
   <h4>Treats with this flavor:</h4>
   @if (Model.JoinEntries != null)
   {

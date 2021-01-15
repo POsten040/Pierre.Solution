@@ -95,8 +95,8 @@ namespace Pierre.Controllers
     public ActionResult Details(int id)
     {
       Treat model = _db.Treats.FirstOrDefault(treat => treat.TreatId == id);
-      var userId = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-      ViewBag.IsCurrentUser = userId != null ? userId == model.User.Id : false;
+      // var userId = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+      // ViewBag.IsCurrentUser = userId != null ? userId == model.User.Id : false;
       return View(model);
     }
   }

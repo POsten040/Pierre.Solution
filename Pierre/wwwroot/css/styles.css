@@ -14,6 +14,7 @@ body{
   border: 1px dotted cyan;
   padding: 15px;
   background-color: rgb(105, 52, 52);
+  text-align: center;
 }
 
 .links {

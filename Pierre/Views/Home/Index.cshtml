@@ -5,12 +5,13 @@
 @using Pierre.Models
 
 <div class="welcome">
-  <h1>Welcome To Pierre's
+  <h3>Hello
     @if(@User.Identity.Name != null)
     {
       @User.Identity.Name;
     } else {
-      <span>New User</span>}!</h1>
+      <span>New User</span>}!</h3>
+  <h1>Welcome To Pierre's!</h1>
       
   <img src="https://media.giphy.com/media/5hvFRdojKLRvHUqUEK/giphy.gif">
 </div>
