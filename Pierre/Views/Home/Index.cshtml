@@ -1,0 +1,20 @@
+@{
+  Layout = "_Layout";
+}
+
+@using Pierre.Models
+
+
+<h1>Welcome To Pierre's</h1>
+<br>
+<h3>See a list of treats below</h3>
+<div class="row">
+  <div class="col-md-6">
+    @foreach (Treat treat in ViewBag.Treats)
+    {
+      <li>@treat</li>
+    }
+    @Html.ActionLink("Add a Treat", "Create", "Treats", null, new{@class="btn"})
+  </div>
+</div>
+  

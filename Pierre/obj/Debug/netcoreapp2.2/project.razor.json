@@ -1870,6 +1870,17 @@
     "CSharpLanguageVersion": 703
   },
   "RootNamespace": "Pierre",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "c:\\Users\\lamapost0001\\desktop\\pierre.solution\\Pierre\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lamapost0001\\desktop\\pierre.solution\\Pierre\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }
