@@ -1892,6 +1892,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\lamapost0001\\desktop\\pierre.solution\\Pierre\\Views\\Account\\Login.cshtml",
+      "TargetPath": "Views\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\lamapost0001\\desktop\\pierre.solution\\Pierre\\Views\\Account\\Register.cshtml",
       "TargetPath": "Views\\Account\\Register.cshtml",
       "FileKind": "mvc"
