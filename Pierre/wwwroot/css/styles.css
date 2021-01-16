@@ -2,6 +2,11 @@ body{
   background-color: rgb(136, 106, 92);
   color: white;
 }
+@media screen and (max-width:1000px){
+  body{
+    background-image: url(https://media.giphy.com/media/3oFzm0F8nf3BRILjX2/giphy.gif);
+  }
+}
 
 .btn {
   width: 100%;
@@ -33,3 +38,12 @@ body{
   color: rgb(255, 255, 255);
   border-radius: 5%;
 }
+/* @media screen and (min-width: 400px){
+  img {
+  width: 50vw;
+  }
+} */
+img {
+  width: 50%;
+  object-fit: cover;
+  }
