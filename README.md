@@ -54,9 +54,10 @@ AppSettings
 | A user should be able to navigate to a splash page that lists all treats and flavors. Users should be able to click on an individual treat or flavor to see all the treats/flavors that belong to it.)                                                                                                            
 </details>
 <br>
+
 ## Known Bugs
 
--none
+-none 1/24/21
 
 ## Support and contact details
 
