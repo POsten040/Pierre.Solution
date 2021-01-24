@@ -26,7 +26,7 @@ Open by Downloading or Cloning
 * Or clone the repository with `git clone `
 
 AppSettings
-* This project requires an AppSettings file. Create your `appsettings.json` file in the main `Library` directory. 
+* This project requires an AppSettings file. Create your `appsettings.json` file in the main project directory (Pierre.Solution/`Pierre`). 
 * Format your `appsettings.json` file as follows including your unique password that was created at MySqlWorkbench installation:
 ```
 {
