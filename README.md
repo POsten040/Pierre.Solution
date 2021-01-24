@@ -15,10 +15,10 @@
 <details>
 
 Software Requirements
-* An internet browser of your choice; I use Google Chrome
-* A code editor; I use VSCode
-* .NET Core
-* MySQL Workbench
+* An internet browser of your choice
+* A code editor; I used [VsCode](https://code.visualstudio.com/download)
+* [MySql Workbench](https://dev.mysql.com/downloads/workbench/)
+* [.NET Core 2.2](https://dotnet.microsoft.com/download)
 
 Open by Downloading or Cloning
 * Navigate to <Pierre.Solution/Pierre>
@@ -64,11 +64,12 @@ Patrick Osten at <posten.coding@gmail.com>
 
 ## Technologies Used
 
+* [Identity](https://www.nuget.org/packages/Microsoft.AspNetCore.Identity/)
 * C#
 * Razor
-* Entity Framework Core
-* MySql Workbench
-* .NET Core
+* [Entity Framework Core 2.2.6](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore)
+* [MySql Workbench](https://dev.mysql.com/downloads/workbench/)
+* [.NET Core](https://dotnet.microsoft.com/download)
 * Coffee
 
 ### License
